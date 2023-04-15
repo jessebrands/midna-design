@@ -1,0 +1,69 @@
+@for $i from 0 through 8 {
+  .p {
+    &-#{$i} {
+      padding: #{$i * $padding-rhythm}px;
+    }
+
+    &x-#{$i} {
+      padding-left: #{$i * $padding-rhythm}px;
+      padding-right: #{$i * $padding-rhythm}px;
+    }
+
+    &r-#{$i} {
+      padding-right: #{$i * $padding-rhythm}px;
+    }
+
+    &l-#{$i} {
+      padding-left: #{$i * $padding-rhythm}px;
+    }
+
+    &y-#{$i} {
+      padding-top: #{$i * $padding-rhythm}px;
+      padding-bottom: #{$i * $padding-rhythm}px;
+    }
+
+    &t-#{$i} {
+      padding-top: #{$i * $padding-rhythm}px;
+    }
+
+    &b-#{$i} {
+      padding-bottom: #{$i * $padding-rhythm}px;
+    }
+  }
+  .m {
+    &-#{$i} {
+      margin: #{$i * $margin-rhythm}px;
+    }
+
+    &x-#{$i} {
+      margin-left: #{$i * $margin-rhythm}px;
+      margin-right: #{$i * $margin-rhythm}px;
+    }
+
+    &r-#{$i} {
+      margin-right: #{$i * $margin-rhythm}px;
+    }
+
+    &l-#{$i} {
+      margin-left: #{$i * $margin-rhythm}px;
+    }
+
+    &y-#{$i} {
+      margin-top: #{$i * $margin-rhythm}px;
+      margin-bottom: #{$i * $margin-rhythm}px;
+    }
+
+    &t-#{$i} {
+      margin-top: #{$i * $margin-rhythm}px;
+    }
+
+    &b-#{$i} {
+      margin-bottom: #{$i * $margin-rhythm}px;
+    }
+  }
+  .gap {
+    &-#{$i} {
+      gap: #{$i * $margin-rhythm}px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons | ZSR Design Library</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Encode+Sans:wght@800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="text/javascript" src="/bundle.js"></script>
+
+    <style>
+        .example {
+            padding: 18px 15px;
+            margin-left: 48px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex flex--spaced mt-4 mb-8">
+    <nav class="flex flex--row flex--align-center gap-4">
+        <a href="/" class="contents">
+            <div class="flex flex--align-center navigation__link navigation-logo">
+                <img src="/images/logo.svg" class="navigation-logo__icon" alt="ZSR Logo" width="64" height="64"/>
+                <span class="navigation-logo__wordmark">Midna Design Library</span>
+            </div>
+        </a>
+    </nav>
+</div>
+
+<h1>Buttons</h1>
+<h3>Priority</h3>
+<p>Buttons are categorized by their importance, communicating intent to the user on the kind of action that will be
+    taken by pressing one of them. Colored buttons should be used very sparingly.</p>
+
+<h4>Example</h4>
+<div class="example flex flex--row gap-4">
+    <button class="button mb-3">Default</button>
+    <button class="button button--primary mb-3">Primary</button>
+    <button class="button button--caution mb-3">Caution</button>
+</div>
+
+<h3>Disabled</h3>
+<p>To disable a button, prefer using the semantic HTML <code>disabled</code> attribute. For cases where this
+    attribute is not available, the <code>button--disabled</code> CSS class can be used.</p>
+
+<h4>Example</h4>
+<div class="example flex flex--row gap-4">
+    <button class="button mb-3" disabled>Default</button>
+    <button class="button button--primary mb-3" disabled>Primary</button>
+    <button class="button button--caution mb-3" disabled>Caution</button>
+</div>
+
+<h3>Buttons with an icon</h3>
+<p>To further communicate intent to the user, you can opt to include a phosphor icon with the button. You can apply the
+    <code>button__icon</code> CSS class to the icon to style it properly.</p>
+
+<div class="example flex flex--row gap-4">
+    <button class="button mb-3">
+        <span class="button__icon ph ph-check"></span>
+        OK
+    </button>
+    <button class="button button--primary mb-3">
+        <span class="button__icon ph ph-pencil-simple-line"></span>
+        Create
+    </button>
+    <button class="button button--caution mb-3">
+        <span class="button__icon ph ph-trash"></span>
+        Delete
+    </button>
+</div>
+</body>
+</html>

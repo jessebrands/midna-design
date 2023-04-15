@@ -1,0 +1,18 @@
+.navigation {
+  &__item {
+    color: $color-triforce;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-brand;
+  }
+}
+
+.navigation-logo {
+  gap: #{$padding-rhythm * 3}px;
+
+  &__icon {}
+  &__wordmark {
+    color: $color-triforce;
+    font-size: $font-size-h2;
+    font-weight: $font-weight-brand;
+  }
+}

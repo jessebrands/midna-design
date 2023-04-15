@@ -1,0 +1,47 @@
+.grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-column-gap: 30px;
+  margin: 0 15px;
+
+  [class*=col-] {
+    box-sizing: border-box;
+  }
+}
+
+.col {
+  @for $i from 1 through 8 {
+    &-#{$i}\/8 {
+      grid-column-end: span #{$i * 3};
+    }
+  }
+
+  @for $i from 1 through 6 {
+    &-#{$i}\/6 {
+      grid-column-end: span #{$i * 4};
+    }
+  }
+
+  @for $i from 1 through 4 {
+    &-#{$i}\/4 {
+      grid-column-end: span #{$i * 6};
+    }
+  }
+
+  @for $i from 1 through 3 {
+    &-#{$i}\/3 {
+      grid-column-end: span #{$i * 8};
+    }
+  }
+
+  @for $i from 1 through 2 {
+    &-#{$i}\/2 {
+      grid-column-end: span #{$i * 12};
+    }
+  }
+
+  &-8\/8, &-6\/6, &-4\/4, &-3\/3, &-2\/2, &-1\/1 {
+    grid-column-end: span 24;
+  }
+}

@@ -1,0 +1,41 @@
+/* brand color, use sparingly */
+$color-triforce: #FFD727;
+
+/* vertical color stack for Z-height, 950 is background color; 800 should level 1 components, 700 level 2 etc */
+$color-lake-hylia-950: #02050D;
+$color-lake-hylia-900: #050D1E;
+$color-lake-hylia-800: #0A1A3D;
+$color-lake-hylia-700: #10265B;
+$color-lake-hylia-600: #15337A;
+$color-lake-hylia-500: #1A3F97;
+$color-lake-hylia-400: #2458D1;
+$color-lake-hylia-300: #557FE2;
+$color-lake-hylia-200: #8EAAEC;
+$color-lake-hylia-100: #C6D4F5;
+$color-lake-hylia-50: #E1E8FA;
+
+/* neutrals colors */
+$color-snowpeak: rgba(255, 255, 255);
+$color-snowpeak-50: rgba(255, 255, 255, 0.5);
+$color-snowpeak-20: rgba(255, 255, 255, 0.2);
+$color-snowpeak-10: rgba(255, 255, 255, 0.1);
+
+$color-bongo-bongo: rgba(0, 0, 0);
+$color-bongo-bongo-65: rgba(0, 0, 0, 0.65);
+$color-bongo-bongo-30: rgba(0, 0, 0, 0.3);
+$color-bongo-bongo-15: rgba(0, 0, 0, 0.15);
+
+/* feedback colors: use these to declare the intent of a responsive message or feedback to the user.
+   for example: a notification, or a message when you fail to log in */
+
+/* accent colors: nice, bright colors to be used to draw attention and add flair */
+$color-kokiri-emerald: #31b922;
+$color-goron-ruby: #EB1616;
+$color-zora-sapphire: #00afef;
+$color-kakariko-shadow: #701ED5;
+$color-gerudo-spirit: #DC8C10;
+
+/* CSS variables */
+:root {
+  --color-grotto: $color-grotto;
+}

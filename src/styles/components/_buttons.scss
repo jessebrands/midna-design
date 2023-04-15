@@ -1,0 +1,62 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: #{$margin-rhythm * 1}px;
+  align-items: center;
+
+  font-size: $font-size-small;
+  font-weight: $font-weight-medium;
+  padding: #{$padding-rhythm * 1.5}px #{$padding-rhythm * 3}px;
+
+  color: $color-snowpeak;
+  background-color: $color-lake-hylia-400;
+  border: none;
+  border-radius: 2px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-lake-hylia-400, 7.5%);
+  }
+
+  &:active {
+    background-color: darken($color-lake-hylia-400, 15%);
+  }
+
+  &--primary {
+    color: $color-lake-hylia-950;
+    background-color: $color-triforce;
+
+    &:hover {
+      background-color: darken($color-triforce, 10%);
+    }
+
+    &:active {
+      background-color: darken($color-triforce, 15%);
+    }
+  }
+
+  &--caution {
+    color: $color-lake-hylia-950;
+    background-color: $color-goron-ruby;
+
+    &:hover {
+      background-color: darken($color-goron-ruby, 5%);
+    }
+
+    &:active {
+      background-color: darken($color-goron-ruby, 10%);
+    }
+  }
+
+  &--disabled, &:disabled, &[disabled] {
+    cursor: auto;
+    background: none;
+    border: 1px solid $color-snowpeak-20;
+    color: $color-snowpeak-20;
+  }
+
+  &__icon {
+    font-size: 18px;
+  }
+}

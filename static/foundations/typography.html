@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typography | ZSR Design Library</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Encode+Sans:wght@800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="text/javascript" src="/bundle.js"></script>
+
+    <style>
+        .example {
+            padding: 18px 15px;
+            margin-left: 48px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex flex--spaced mt-4 mb-8">
+    <nav class="flex flex--row flex--align-center gap-4">
+        <a href="/" class="contents">
+            <div class="flex flex--align-center navigation__link navigation-logo">
+                <img src="/images/logo.svg" class="navigation-logo__icon" alt="ZSR Logo" width="64" height="64"/>
+                <span class="navigation-logo__wordmark">Design</span>
+            </div>
+        </a>
+        <a href="/foundations" class="contents">
+            <div class="navigation__item">
+                Patterns
+            </div>
+        </a>
+    </nav>
+</div>
+
+<h1>Typography</h1>
+<h3>Type scale</h3>
+
+<div class="example">
+    <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <div><strong>Body strong</strong></div>
+    <div>Body</div>
+    <div class="text-small">Labels, buttons, and meta</div>
+</div>
+
+<h3>Paragraphs</h3>
+
+<p>The default body text is 16px at 400 weight (regular). To ease strain on the reader, text is capped to a maximum
+    width.</p>
+
+<p class="font-bold">Example</p>
+
+<div class="example">
+    <h2>Main section title</h2>
+    <h4>Subsection title</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h4>Small, secondary text</h4>
+    <p class="text-small text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+</div>
+
+<h3>Utilities</h3>
+
+<h4>Helper classes</h4>
+
+<p><code>text-small</code> for small text.</p>
+<p><code>text-secondary</code> for lighter text.</p>
+<p><code>font-bold</code> for 600 weight bold text.</p>
+<p><code>font-light</code> for 300 weight light text.</p>
+<p><code>font-italic</code> for italic font.</p>
+
+<h4>SCSS/SASS variables</h4>
+
+<p><code>$font-stack-base</code> for the default font stack &dash; "Poppins", "Century Gothic", "Verdana", sans-serif.
+</p>
+<p><code>$font-stack-mono</code> for the monospace font stack &dash; "SFMono-Regular", Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", Courier, monospace.</p>
+<p><code>$font-size-large</code> for 17px large text.</p>
+<p><code>$font-size-regular</code> for 16px regular text.</p>
+<p><code>$font-size-small</code> for 14px small text.</p>
+
+</body>
+</html>
